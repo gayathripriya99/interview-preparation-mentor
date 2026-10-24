@@ -17,7 +17,8 @@ import {
   Sparkles,
   HelpCircle,
   FileText,
-  AlertCircle
+  AlertCircle,
+  Globe
 } from 'lucide-react';
 import { useProgress } from '../context/ProgressContext';
 import { CURRICULUM_MODULES } from '../data/curriculumData';
@@ -115,6 +116,18 @@ export const DashboardView: React.FC = () => {
               <FileText style={{ width: '1.1rem', height: '1.1rem' }} />
               Project Recall Worksheet
             </button>
+
+            <a
+              href="/production-interview-mentor-kit.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-secondary"
+              style={{ padding: '0.85rem 1.5rem', fontSize: '0.95rem' }}
+              title="Open standalone zero-dependency HTML edition"
+            >
+              <Globe style={{ width: '1.1rem', height: '1.1rem', color: '#67e8f9' }} />
+              Standalone HTML Edition
+            </a>
           </div>
         </div>
 
